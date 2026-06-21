@@ -393,7 +393,7 @@ export default function AMSElectricals() {
           background: "rgba(255,107,53,0.13)", border: "1px solid rgba(255,107,53,0.32)",
           borderRadius: 14, padding: "14px 20px", backdropFilter: "blur(8px)"
         }}>
-          <div style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: 34, fontWeight: 900, color: "#FF6B35", lineHeight: 1 }}>23+</div>
+          <div style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: 34, fontWeight: 900, color: "#FF6B35", lineHeight: 1 }}>28+</div>
           <div style={{ fontSize: 11, color: "#8A9BB0", letterSpacing: 1.2, textTransform: "uppercase", marginTop: 2 }}>Years Experience</div>
         </div>
 
@@ -450,7 +450,7 @@ export default function AMSElectricals() {
             }}>MS</div>
             <div>
               <div style={{ fontSize: 13, fontWeight: 600, color: "#F7F4EF" }}>Mohamed Shajahan A</div>
-              <div style={{ fontSize: 11, color: "#8A9BB0" }}>Owner · 23 Years Experience</div>
+              <div style={{ fontSize: 11, color: "#8A9BB0" }}>Owner · 28 Years Experience</div>
             </div>
           </div>
 
@@ -584,7 +584,7 @@ export default function AMSElectricals() {
             <p
               style={{ fontSize: "16px", lineHeight: "1.85", color: "#4A5568", marginBottom: "20px", fontWeight: "400" }}
 >
-              With more than 23 years of experience in home appliance repair and
+              With more than 28 years of experience in home appliance repair and
               electrical services, Mohamed Shajahan has built A.M.S Electricals into
               one of Salem's trusted home appliance service centers. His expertise ranges
               from mixer grinders and washing machines to advanced ceiling fan motor
@@ -616,7 +616,7 @@ export default function AMSElectricals() {
                   color: "#0D1B2A" 
                 }}
               >
-                🏆 23+ Years Experience
+                🏆 28+ Years Experience
               </div>
 
               <div
@@ -708,7 +708,7 @@ export default function AMSElectricals() {
             <p className="section-label" style={{ marginBottom: 10, color: "#FFD23F" }}>Our Specialty</p>
             <h2 className="section-title" style={{ fontSize: 48, color: "#F7F4EF" }}>Ceiling Fan Experts</h2>
             <p style={{ color: "#8A9BB0", marginTop: 12, fontSize: 16, maxWidth: 500, margin: "12px auto 0" }}>
-              23 years of ceiling fan repair — from blade replacement to full motor coil rewinding
+              28 years of ceiling fan repair — from blade replacement to full motor coil rewinding
             </p>
           </div>
 
@@ -728,7 +728,7 @@ export default function AMSElectricals() {
                 background: "#FFD23F", borderRadius: 12, padding: "14px 20px",
                 boxShadow: "0 8px 24px rgba(0,0,0,0.3)"
               }}>
-                <div style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: 28, fontWeight: 900, color: "#0D1B2A", lineHeight: 1 }}>23+</div>
+                <div style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: 28, fontWeight: 900, color: "#0D1B2A", lineHeight: 1 }}>28+</div>
                 <div style={{ fontSize: 11, fontWeight: 700, color: "#0D1B2A", letterSpacing: 1 }}>YEARS EXPERT</div>
               </div>
             </div>
@@ -778,7 +778,7 @@ export default function AMSElectricals() {
       <section style={{ padding: "0", background: "#F7F4EF" }}>
         <div style={{ maxWidth: 1400, margin: "0 auto 0", display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 0, borderRadius: 0, overflow: "hidden" }}>
           {[
-            { num: "23+", label: "Years in Business", note: "Serving Salem since 1998", accent: false },
+            { num: "28+", label: "Years in Business", note: "Serving Salem since 1998", accent: false },
             { num: "5000+", label: "Appliances Repaired", note: "Fans, Washers, Grinders & more", accent: true },
             { num: "100%", label: "Genuine Parts", note: "Only authentic spare parts used", accent: false },
           ].map((stat, i) => (
@@ -829,7 +829,7 @@ export default function AMSElectricals() {
                   }}>MS</div>
                   <div>
                     <div style={{ fontWeight: 600, color: "#F7F4EF", fontSize: 15 }}>Mohamed Shajahan</div>
-                    <div style={{ fontSize: 12, color: "#FF6B35" }}>Owner · 23 Years Experience</div>
+                    <div style={{ fontSize: 12, color: "#FF6B35" }}>Owner · 28 Years Experience</div>
                   </div>
                 </div>
 
@@ -945,7 +945,7 @@ export default function AMSElectricals() {
             Home Appliance Service Center · Owned by <span style={{ color: "#F7F4EF", fontWeight: 500 }}>Mohamed Shajahan</span> · Salem, Tamil Nadu
           </p>
           <p style={{ color: "#4A5A70", fontSize: 12, marginBottom: 16 }}>
-            Ceiling Fan Specialist · Coil Winding Expert · 23+ Years
+            Ceiling Fan Specialist · Coil Winding Expert · 28+ Years
           </p>
           <div style={{ height: 1, background: "rgba(255,255,255,0.07)", margin: "16px 0" }} />
           <div style={{ display: "flex", justifyContent: "center", gap: 24, flexWrap: "wrap" }}>
