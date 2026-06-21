@@ -64,7 +64,7 @@ const APPLIANCES = [
     fallback: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6aEeEzjkPSsQpHtjaVuvnHKSgsJY0pDd-55WbwtHnJA&s=10",
     desc: "All brands service and spare parts available",
     color: "#FFF8EE"
-  }, 
+  },
   {
     name: "Kitchen Exhaust Fan",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnBE3o8rbAKEefseK-l7_wTW_kWyXXYTdZuTxI2X1hbA&s=10",
@@ -156,6 +156,7 @@ export default function AMSElectricals() {
 
          .owner-grid {
     display: grid;
+    grid-template-columns: 320px 1fr; 
   }
 
   html {
@@ -180,13 +181,19 @@ export default function AMSElectricals() {
   }
 
   @media (max-width: 540px) {
-    .hero-title { font-size: 36px !important; }
+  .hero-title { font-size: 38px !important; }
   .appliances-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .services-grid { grid-template-columns: 1fr !important; }
-  .nav-links { display: none; }
-  .hero-section-mobile-pad { padding: 110px 20px 60px !important; }
-  .top-bar-email { display: none; }
-  }
+  .nav-links { display: none !important; }
+  .hero-section-mobile-pad { padding: 130px 20px 60px !important; }
+  .top-bar-email { display: none !important; }
+  .ceiling-fan-grid { grid-template-columns: 1fr !important; }
+  .contact-grid { grid-template-columns: 1fr !important; }
+  .stats-grid { grid-template-columns: 1fr !important; }
+  .owner-grid { grid-template-columns: 1fr !important; text-align: center; }
+  .hero-cta-row { flex-direction: column !important; }
+  .hero-tags { flex-direction: column !important; gap: 10px !important; }
+}
 
         .service-card {
           background: #fff;
@@ -269,14 +276,14 @@ export default function AMSElectricals() {
         @keyframes spin-fan { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
         .spin-fan { animation: spin-fan 6s linear infinite; transform-origin: center; }
 
-        @media (max-width: 900px) {
-          .services-grid { grid-template-columns: 1fr 1fr !important; }
-          .appliances-grid { grid-template-columns: repeat(2, 1fr) !important; }
-          .stats-grid { grid-template-columns: 1fr !important; gap: 1px !important; }
-          .contact-grid { grid-template-columns: 1fr !important; }
-          .hero-title { font-size: 58px !important; }
-          .hero-badges { display: none !important; }
-        }
+       @media (max-width: 900px) {
+  .services-grid { grid-template-columns: 1fr 1fr !important; }
+  .appliances-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .stats-grid { grid-template-columns: 1fr !important; }
+  .contact-grid { grid-template-columns: 1fr !important; }
+  .ceiling-fan-grid { grid-template-columns: 1fr !important; }
+  .hero-badges { display: none !important; }
+}
         @media (max-width: 540px) {
           .hero-title { font-size: 44px !important; }
           .appliances-grid { grid-template-columns: repeat(2, 1fr) !important; }
@@ -357,13 +364,15 @@ export default function AMSElectricals() {
       </nav>
 
       {/* ── HERO ── */}
-      <section style={{
-        background: "linear-gradient(140deg, #0A1520 0%, #0D1B2A 55%, #14263A 100%)",
-        minHeight: "100vh",
-        display: "flex", flexDirection: "column", justifyContent: "center",
-        padding: "150px 40px 90px",
-        position: "relative", overflow: "hidden"
-      }}>
+      <section
+        className="hero-section-mobile-pad"
+        style={{
+          background: "linear-gradient(140deg, #0A1520 0%, #0D1B2A 55%, #14263A 100%)",
+          minHeight: "100vh",
+          display: "flex", flexDirection: "column", justifyContent: "center",
+          padding: "150px 40px 90px",   // ← kept as default; mobile class overrides it
+          position: "relative", overflow: "hidden"
+        }}>
         {/* Grid */}
         <div style={{
           position: "absolute", inset: 0, opacity: 0.035,
@@ -449,12 +458,12 @@ export default function AMSElectricals() {
             Expert repairs & genuine spare parts for all home appliances. Specialists in ceiling fan repair &amp; coil winding — right here in Salem.
           </p>
 
-          <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+          <div className="hero-cta-row" style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <a className="cta-btn" href="#contact">Book a Service ⚡</a>
             <a className="cta-btn-outline" href={MAP_LINK} target="_blank" rel="noreferrer">📍 Get Directions</a>
           </div>
 
-          <div style={{ marginTop: 52, display: "flex", alignItems: "center", gap: 24, flexWrap: "wrap" }}>
+          <div className="hero-tags" style={{ marginTop: 52, display: "flex", alignItems: "center", gap: 24, flexWrap: "wrap" }}>
             {["Genuine Spare Parts", "Same-Day Service", "Ceiling Fan Specialist", "All Brands Serviced"].map((tag, i) => (
               <div key={i} style={{ display: "flex", alignItems: "center", gap: 7 }}>
                 <div style={{ width: 6, height: 6, borderRadius: "50%", background: i === 2 ? "#FFD23F" : "#FF6B35" }} />
@@ -523,7 +532,7 @@ export default function AMSElectricals() {
             maxWidth: 1200,
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "320px 1fr",
+            // gridTemplateColumns: "320px 1fr",
             gap: "50px",
             alignItems: "center"
           }}
@@ -717,7 +726,7 @@ export default function AMSElectricals() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32, alignItems: "center" }}>
+          <div className="ceiling-fan-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32, alignItems: "center" }}>
             {/* Left: image */}
             <div style={{ position: "relative" }}>
               <div style={{ borderRadius: 18, overflow: "hidden", border: "2px solid rgba(255,210,63,0.2)" }}>
