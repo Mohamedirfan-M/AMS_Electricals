@@ -572,29 +572,18 @@ export default function AMSElectricals() {
           <div>
             <p
               className="section-label"
-              style={{ marginBottom: "10px" }}
+              style={{ marginBottom: "10px", fontSize: "22px", letterSpacing: "5px" }}
             >
               Meet The Owner
             </p>
 
-            <h2
-              className="section-title"
-              style={{
-                fontSize: "48px",
-                marginBottom: "20px"
-              }}
-            >
+            <h2 className="section-title" style={{ fontSize: "48px", marginBottom: "20px", color: "#0D1B2A", letterSpacing: "-0.5px" }}>
               Mohamed Shajahan A
             </h2>
 
             <p
-              style={{
-                fontSize: "17px",
-                lineHeight: "1.9",
-                color: "#6B7A90",
-                marginBottom: "20px"
-              }}
-            >
+              style={{ fontSize: "16px", lineHeight: "1.85", color: "#4A5568", marginBottom: "20px", fontWeight: "400" }}
+>
               With more than 23 years of experience in home appliance repair and
               electrical services, Mohamed Shajahan has built A.M.S Electricals into
               one of Salem's trusted home appliance service centers. His expertise ranges
@@ -603,12 +592,7 @@ export default function AMSElectricals() {
             </p>
 
             <p
-              style={{
-                fontSize: "17px",
-                lineHeight: "1.9",
-                color: "#6B7A90",
-                marginBottom: "25px"
-              }}
+              style={{ fontSize: "16px", lineHeight: "1.85", color: "#4A5568", marginBottom: "20px", fontWeight: "400" }}
             >
               Known for honest service, genuine spare parts, and customer-first
               support, he has helped thousands of households keep their appliances
@@ -627,7 +611,9 @@ export default function AMSElectricals() {
                   background: "#FFF3EE",
                   padding: "12px 18px",
                   borderRadius: "10px",
-                  fontWeight: "600"
+                  fontWeight: "600",
+                  fontSize: "14px", 
+                  color: "#0D1B2A" 
                 }}
               >
                 🏆 23+ Years Experience
